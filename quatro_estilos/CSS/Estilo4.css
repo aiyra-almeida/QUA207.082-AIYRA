@@ -1,15 +1,50 @@
 body{
 background-color: black;
 color: forestgreen;
-font: 20px "currier new";
+font: 100% "Courier New";
 }
 
-a{
+#top{
+    padding: 15px;
+    border: 12px dashed blueviolet;
+    margin: 25px;
+}
+#top h1, #top p{
+    margin: 0px;
+}
+
+li:hover{
+    color: azure;
+    cursor: pointer;
+}
+
+#menubar{
+    background-color: black
+}
+
+#main{
+    margin: 15px;
+}
+
+.wrapper{
+    position: relative;
+}
+#sidebar{
+    background-color: rgba(137, 43, 226, 0.295);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 320px;
+    border: 2px, solid white;
+    margin: 25px;
+}
+
+/*a{
 color:aliceblue;
 font:16px; 
 }
 h1{
-color:crimson;
+color:rgb(20, 113, 220);
 text-align: center
 }
 
@@ -22,3 +57,4 @@ h3{
     color:purple;
     text-align: center;
     }
+*/
