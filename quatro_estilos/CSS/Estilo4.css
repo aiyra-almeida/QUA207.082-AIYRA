@@ -65,12 +65,24 @@ a:hover{
     line-height: 15px;
     text-align: center;
 }
-/*
+
+li:nth-child(4){
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width: 700px){
+    #sidebar{
+    position: relative;
+    width: auto;
+    margin: 15px;
+    }
+};
+
 h1{
 color:rgb(20, 113, 220);
 text-align: center
 }
-*/
 
 h2{
 color: green;
@@ -81,4 +93,3 @@ h3{
     color:white;
     text-align: center;
     }
-*/
