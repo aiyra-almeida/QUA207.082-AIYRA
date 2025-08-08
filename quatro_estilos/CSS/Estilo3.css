@@ -1,16 +1,11 @@
 body{
     font: 100% Verdana;
-    margin: 20px;
     line-height: 26px;
- }
+    margin: 20px;
+     }
 
 #top{
-    font: 100% Verdana;
- }
-
- .wrapper {
-    position: relative;
-    overflow: auto;
+    padding-top: 1px;    
  }
 
 h1, h2, h3{ 
@@ -23,22 +18,22 @@ h1, h2, h3{
     overflow: auto;
     }
 
-.menuitem {
-    width: 165px;
-    float: left;
+li{ 
     background-color: #555555;
     color: white;
     list-style-type: none;
-    margin: 4px;
-    padding: 2px;
-    text-align: center;
     cursor: pointer;
+    margin: 4px;
+    float: left;
+    width: 165px;
+    text-align: center;
+    padding: 2px;
 }
 
-li{ }
-
 ul{ 
-    padding-inline-start: 40px;
+    /*padding-inline-start: 40px;*/
+    overflow: auto;
+    padding: 0;
 }
 
 li:nth-child(3){
@@ -47,7 +42,7 @@ li:nth-child(3){
 
 li:hover{
     cursor: pointer;
-    color: #4CAF50;
+    background-color: black
 }
 
 #sidebar{ 
@@ -57,21 +52,20 @@ li:hover{
 }
 
 #bottom{
+    margin: 0px;
+ }
+
+#bottom p{
     text-align: center;
     padding: 10px;
     font-size: 70%;
     line-height: 14px;
  }
 
-#bottom p{ }
+a{
+    color: black;
+ }
 
-a{ }
-
-
-/*
-background-color: black;
-color: black;
-margin: 0px;
-padding-top: 1px;
-width: 165px;
-*/
+ a:hover {
+    color: #4CAF50;
+ }
