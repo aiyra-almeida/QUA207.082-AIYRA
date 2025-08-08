@@ -13,7 +13,6 @@ line-height: 25px;
 #top h1, #top p{
     margin: 0px;
 }
-
 li:hover{
     color: azure;
     cursor: pointer;
@@ -31,7 +30,6 @@ li:hover{
     position: relative;
 }
 #sidebar{
-    background-color: rgba(137, 43, 226, 0.295);
     position: absolute;
     right: 0;
     top: 0;
@@ -79,6 +77,7 @@ li:nth-child(4){
     }
 };
 
+/*
 h1{
 color:rgb(20, 113, 220);
 text-align: center
@@ -93,3 +92,4 @@ h3{
     color:white;
     text-align: center;
     }
+*/
