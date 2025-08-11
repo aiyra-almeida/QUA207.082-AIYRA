@@ -1,12 +1,13 @@
 body{ 
     background-color: #d14836;
     font-family: Arial;
-    line-height: 26px;
+    
 }
 
 #top{ 
     color: white;
     font-size: 30px;
+    padding: 15px;
 }
 
 ul { 
@@ -17,16 +18,18 @@ ul {
 #top h1{ 
     color: white;
     line-height: 50px;
+    margin: 0px;
 }
 
 #menubar{ 
-    color: white;  
+    color: white; 
 }
 
 #main{ 
-    color: #d14836;
+    color: black;
     background-color: white;
     font: 80% Verdana;
+    padding: 10px;
     
 }
 #main h1, #main h2, #sidebar{ 
@@ -36,60 +39,59 @@ ul {
 
 #sidebar{
     color: #d14836;
-    background-color: #F6DAD7;      
+    background-color: #F6DAD7;
+    line-height: 20px;  
+    padding: 10px;
 }
 
 #bottom{ 
     margin: 0;
+    padding: 10px;
+    
 }
 
 #bottom p{ 
     font-size: 70%;
     text-align: center;
+    color: white;
+    padding: 10px;
 }
 
 li{
     text-align: center;
     list-style-type: none;
-    color: #d14836;
+    color: white;
+    background-color: #d14836;
     border: #d14836 solid 1px;
     border-radius: 40px;
+    width: 155px;
+    padding: 5px;
+    line-height: 20px;
+    margin: 10px;
+    font: Verdana;    
  }
 
 li:hover{ 
     background-color: white;
     cursor: pointer;
+    color:#d14836
 }
 
 li:nth-child(2){ 
-    background-color: #d14836;
-    color: white
+    background-color: white;
+    color:#d14836;
+    font-weight: bold;
 }
 
 a{ 
-    color: #d14836;    
+    color: #d14836;
+    text-decoration: none;
 }
 
 a:hover{
     text-decoration: underline;
-    
-
  }
 
 /*
 
-font: Verdana;
-
-font-weight: bold;
-line-height: 20px;
-text-decoration: none;
-margin: 0px;
-margin: 10px;
-padding: 0;
-padding: 10px;
-padding: 10px;
-padding: 10px;
-padding: 15px;
-padding: 5px;
-width: 155px;
 */
