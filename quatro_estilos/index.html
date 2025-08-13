@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/quatro_estilos/CSS/Estilo2.css">
     <link rel="stylesheet" href="/quatro_estilos/CSS/Estilo3.css">
     <link rel="stylesheet" href="/quatro_estilos/CSS/Estilo4.css">
-    <link rel="stylesheet" href="/quatro_estilos/CSS/Estilo-TESTE.css">
+    
 </head>
 
 <body>
@@ -28,7 +28,6 @@
                 <li onclick="estiloOn(1)">Folha estilo 2</li>
                 <li onclick="estiloOn(2)">Folha estilo 3</li>
                 <li onclick="estiloOn(3)">Folha estilo 4</li>
-                <li onclick="estiloOn(4)">Folha estilo teste</li>
                 <li onclick="estiloOff()">Folha sem estilo</li>
             </ul>
         </div>
@@ -42,8 +41,7 @@
             <a href="#"onclick="estiloOn(0)">Folha de Estilo 1</a> ,
             <a href="#"onclick="estiloOn(1)">Folha de Estilo 2</a> ,
             <a href="#"onclick="estiloOn(2)">Folha de Estilo 3</a> ,
-            <a href="#"onclick="estiloOn(3)">Folha de Estilo 4</a> ,
-            <a href="#"onclick="estiloOn(4)">Folha estilo teste</a>.
+            <a href="#"onclick="estiloOn(3)">Folha de Estilo 4</a> .
             </p>
             <h2>Sem estilos</h2>
             <p>
@@ -81,7 +79,6 @@
             document.styleSheets[1].disabled = true;
             document.styleSheets[2].disabled = true;
             document.styleSheets[3].disabled = true;
-            document.styleSheets[4].disabled = true;
         }
         function estiloOn(n)
         {
