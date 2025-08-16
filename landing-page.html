@@ -35,7 +35,7 @@
         }
         #principal p{
             padding-top: 20px;
-            width: 400px;
+            max-width: 400px;
             margin:auto;
         }
         #principal button{
@@ -44,6 +44,7 @@
             background-color: gainsboro;
             border: 3px solid gray;
             font-weight: bold;
+            border-radius: 5px;
         }
         #lista{
             display: flex;
@@ -76,10 +77,23 @@
             color: white;
             text-align: end;
         }
+        body{
+            max-width: 1200px;
+            margin: auto;
+        }
+        #conteiner{
+            display: flex;
+            width: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
     </style>
 </head>
 <body>
+
+    <div id="conteiner">
+        <div id="grupo1">
     <header>
         <h1>D'Aiyra</h1>
         <nav>
@@ -114,7 +128,9 @@
             <p>Seus dados estão protegidos com criptografia de ponta-a-ponta.</p>
         </div>
     </section>
+        </div>
 
+        <div id="grupo2">
     <section id="depoimentos">
         <h2>O que nossos clientes dizem</h2>
         <p>"Mudou completamente minha vida!"</p>
@@ -123,5 +139,7 @@
     <footer>
         &copy; 2025 D'Aiyra - Todos os direitos reservados
     </footer>
+        </div>
+    </div>
 </body>
 </html>
