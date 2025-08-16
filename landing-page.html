@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Marca</title>
     <style>
-        *{
+        * {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             text-decoration: none;
             border: none;
         }
-        header{
+
+        header {
             display: flex;
             justify-content: space-between;
             border: 1px solid black;
             align-items: center;
             background-color: gainsboro;
         }
-        nav a{
+
+        nav a {
             color: white;
             padding: 10px 15px;
             margin: 0px 2px;
-            background-color:black ;
+            background-color: black;
         }
-        #principal{
+
+        #principal {
             background-color: gray;
             text-align: center;
         }
-        #principal h2{
+
+        #principal h2 {
             padding-top: 45px;
-            font-weight: bold;            
+            font-weight: bold;
         }
-        #principal p{
+
+        #principal p {
             padding-top: 20px;
             max-width: 400px;
-            margin:auto;
+            margin: auto;
         }
-        #principal button{
+
+        #principal button {
             margin: 20px;
             padding: 15px 20px;
             background-color: gainsboro;
@@ -46,100 +53,109 @@
             font-weight: bold;
             border-radius: 5px;
         }
-        #lista{
+
+        #lista {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
-        #lista .caixa{
+
+        #lista .caixa {
             background-color: gray;
-            width: 250px;
+            width: 200px;
             border: 1px solid gainsboro;
             border-radius: 5px;
             text-align: center;
             padding: 20px;
             margin: 20px;
         }
-        .caixa h3{
+
+        .caixa h3 {
             padding: 5px 0px;
         }
-        #depoimentos{
+
+        #depoimentos {
             background-color: gray;
             padding: 20px;
             text-align: center;
-            
+
         }
-        #depoimentos *{
+
+        #depoimentos * {
             padding: 10px;
         }
-        footer{
+
+        footer {
             background-color: black;
             color: white;
             text-align: end;
         }
-        body{
+
+        body {
             max-width: 1200px;
             margin: auto;
         }
-        #conteiner{
+
+        #conteiner {
             display: flex;
-            width: 100vh;
+            height: 100vh;
             flex-direction: column;
             justify-content: space-between;
         }
-
     </style>
 </head>
+
 <body>
 
     <div id="conteiner">
         <div id="grupo1">
-    <header>
-        <h1>D'Aiyra</h1>
-        <nav>
-            <a href="" id="A">A</a>
-            <a href="" id="B">B</a>
-            <a href="" id="C">C</a>
-        </nav>
-    </header>
-    <section id="principal">
-        <h2>Transfome sua realidade, saindo do mundo das ideias</h2>
-        <p> 
-            Nosso produto ajuda voce a alcançar seus objetivos de forma simples, rápida e eficiente.
-        </p>
-        <button>
-            Quero começar AGORA!
-        </button>
-    </section>
+            <header>
+                <h1>D'Aiyra</h1>
+                <nav>
+                    <a href="">A</a>
+                    <a href="">B</a>
+                    <a href="">C</a>
+                </nav>
+            </header>
+            <section id="principal">
+                <h2>Transfome sua realidade, saindo do mundo das ideias</h2>
+                <p>
+                    Nosso produto ajuda voce a alcançar seus objetivos de forma simples, rápida e eficiente.
+                </p>
+                <button>
+                    Quero começar AGORA!
+                </button>
+            </section>
 
-    <section id=lista>
-        <div class="caixa">
-            <h3>Rápido</h3>
-            <p> Obtenha resultados em tempo recorde com nossas soluções.</p>
-        </div>
+            <section id=lista>
+                <div class="caixa">
+                    <h3>Rápido</h3>
+                    <p> Obtenha resultados em tempo recorde com nossas soluções.</p>
+                </div>
 
-        <div class="caixa">
-            <h3>Simples</h3>
-            <p> Interface amigável para todos os níveis de users.</p>
-        </div>
+                <div class="caixa">
+                    <h3>Simples</h3>
+                    <p> Interface amigável para todos os níveis de users.</p>
+                </div>
 
-        <div class="caixa">
-            <h3>Seguro</h3>
-            <p>Seus dados estão protegidos com criptografia de ponta-a-ponta.</p>
-        </div>
-    </section>
+                <div class="caixa">
+                    <h3>Seguro</h3>
+                    <p>Seus dados estão protegidos com criptografia de ponta-a-ponta.</p>
+                </div>
+            </section>
         </div>
 
         <div id="grupo2">
-    <section id="depoimentos">
-        <h2>O que nossos clientes dizem</h2>
-        <p>"Mudou completamente minha vida!"</p>
-        <p> "Excelente atendimento e resultados incríveis" </p>
-    </section>
-    <footer>
-        &copy; 2025 D'Aiyra - Todos os direitos reservados
-    </footer>
+            <section id="depoimentos">
+                <h2>O que nossos clientes dizem</h2>
+                <p>"Mudou completamente minha vida!"</p>
+                <p> "Excelente atendimento e resultados incríveis" </p>
+            </section>
+            <footer>
+                &copy; 2025 D'Aiyra - Todos os direitos reservados
+            </footer>
         </div>
     </div>
 </body>
+
 </html>
