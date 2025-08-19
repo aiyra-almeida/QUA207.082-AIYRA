@@ -65,10 +65,11 @@
             padding: 15px 20px;
             background-color: gainsboro;
             font-weight: bold;
+            justify-content: space-around;
         }
 
         #principal button:hover {
-            background-color: #Cf0;
+            background-color: #Cf0; 
         }
 
         #carrossel {
@@ -87,19 +88,28 @@
             padding: 20px;
             margin: 20px;
         }
-
-        .caixa h3 {
-            padding: 5px 0px;
-        }
-
-        #atributos{
+       
+        #noticias {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;            
+            justify-content: space-between;
         }
 
-        #atributos .caixa2{
-            justify-content: space-around;
+        #noticias .noticia{
+            width: 300px;
+            margin: 30px;
             align-items: center;            
+        }
+
+        .noticia div{            
+            border-radius: 100%;
+            border: 1px solid gray;
+            float: left;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;            
+            align-items: center;
         }
 
         #depoimentos {
@@ -142,8 +152,8 @@
                 <nav>
                     <a href=""><img src="./landing-page/icon-insta.png" alt="" width="25" height="25"></a>
                     <a href=""><img src="./landing-page/ico-bluesky.webp" alt="" width="25" height="25"></a>
-                    <a href=""> <img src="./landing-page/icon-orkut.png" alt="" width="25" height="25"></a>
-                    <a href=""> <img src="./landing-page/icon-spot.png" alt="" width="25" height="25"></a>
+                    <a href=""><img src="./landing-page/icon-orkut.png" alt="" width="25" height="25"></a>
+                    <a href=""><img src="./landing-page/icon-spot.png" alt="" width="25" height="25"></a>
                 </nav>
             </header>
             <section id="principal">
@@ -167,68 +177,65 @@
             </section>
 
             <section id=carrossel>
-                <div class="caixa">
-                    <h3>Rápido</h3>
-                    <p> Obtenha resultados em tempo recorde com nossas soluções.</p>
+                <div class="caixa">                 
                 </div>
 
-                <div class="caixa">
-                    <h3>Simples</h3>
-                    <p> Interface amigável para todos os níveis de users.</p>
+                <div class="caixa">                     
                 </div>
 
-                <div class="caixa">
-                    <h3>Seguro</h3>
-                    <p>Seus dados estão protegidos com criptografia de ponta-a-ponta.</p>
+                <div class="caixa">                     
                 </div>
 
-                <div class="caixa">
-                    <h3>Seguro</h3>
-                    <p>Seus dados estão protegidos com criptografia de ponta-a-ponta.</p>
+                <div class="caixa">                     
                 </div>
     
             </section>
         </div>
 
-        <section id="atributos">
-            <div class="caixa2">
+        <section id="noticias">
+            <div class="noticia">
+                <div>1</div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et
                     aliquid eius vel molestiae cupiditate ea enim dolores.</p>
             </div>
 
-            <div class="caixa2">
+            <div class="noticia">
+                <div>2</div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et
                     aliquid eius vel molestiae cupiditate ea enim dolores.</p>
             </div>
 
-            <div class="caixa2">
+            <div class="noticia">
+                <div>3</div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et
                     aliquid eius vel molestiae cupiditate ea enim dolores.</p>
             </div>
 
-            <div class="caixa2">
+            <div class="noticia">
+                <div>4</div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et
                     aliquid eius vel molestiae cupiditate ea enim dolores.</p>
             </div>
 
-            <div class="caixa2">
+            <div class="noticia">
+                <div>5</div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et
                     aliquid eius vel molestiae cupiditate ea enim dolores.</p>
             </div>
 
-            <div class="caixa2">
+            <div class="noticia">
+                <div>6</div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et
                     aliquid eius vel molestiae cupiditate ea enim dolores.</p>
             </div>
-
-
         </section>
+
 
         <div id="grupo2">
             <section id="depoimentos">
