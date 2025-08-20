@@ -41,6 +41,10 @@
             align-items: flex-end;
         }
 
+        nav a:hover {
+            background-color: #Cf0;
+        }
+
         #principal {
             background-color: white;
             text-align: flex-end;
@@ -62,14 +66,16 @@
 
         #principal button {
             margin: 20px;
-            padding: 15px 20px;
+            padding: 15px;
+            width: 300px;
+            border: 1px dashed black;
             background-color: gainsboro;
             font-weight: bold;
             justify-content: space-around;
         }
 
         #principal button:hover {
-            background-color: #Cf0; 
+            background-color: #Cf0;
         }
 
         #carrossel {
@@ -88,50 +94,72 @@
             padding: 20px;
             margin: 20px;
         }
-       
+
         #noticias {
             display: flex;
-            flex-wrap: wrap;            
+            flex-wrap: wrap;
             justify-content: space-between;
         }
 
-        #noticias .noticia{
+        #noticias .noticia {
             width: 300px;
             margin: 30px;
-            align-items: center;            
+            align-items: center;
         }
 
-        .noticia div{            
+        .noticia div {
             border-radius: 100%;
-            border: 1px solid gray;
+            border: 1px solid black;
             float: left;
             width: 30px;
             height: 30px;
             display: flex;
-            justify-content: center;            
+            justify-content: center;
             align-items: center;
+            margin-right: 10px;            
         }
 
-        #depoimentos {
-            background-color: gray;
-            padding: 20px;
-            text-align: center;
-
+        .noticia h3 {
+            font-size: large;
         }
 
-        #depoimentos * {
+        .noticia p {
+            margin-top: 5px;
+            text-align: justify;
+        }
+
+        #depoimentos {   
+            display: flex;
+            text-align: justify;
+                                   
+        }
+
+        #depoimentos .depoimento {
+            padding: 30px;
+            margin: 20px;
+        }
+
+        #depoimentos .foto {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
             padding: 10px;
+            background-color: gainsboro;
         }
 
         footer {
             background-color: black;
             color: white;
             text-align: end;
+            padding: 20px;
         }
 
         body {
+            display: flex;
             max-width: 1200px;
             margin: auto;
+            justify-content: center;
         }
 
         #conteiner {
@@ -145,9 +173,8 @@
 
 <body>
 
-    <div id="conteiner">
-        <div id="grupo1">
-            <header>
+    <div id="conteiner">       
+        <header>
                 <h1>D'Aiyra</h1>
                 <nav>
                     <a href=""><img src="./landing-page/icon-insta.png" alt="" width="25" height="25"></a>
@@ -155,7 +182,7 @@
                     <a href=""><img src="./landing-page/icon-orkut.png" alt="" width="25" height="25"></a>
                     <a href=""><img src="./landing-page/icon-spot.png" alt="" width="25" height="25"></a>
                 </nav>
-            </header>
+        </header>
             <section id="principal">
                 <div id="parte1">
                     <h2>Lorem ipsum dolor sit amet.</h2>
@@ -177,21 +204,13 @@
             </section>
 
             <section id=carrossel>
-                <div class="caixa">                 
-                </div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
+                <div class="caixa"></div>
 
-                <div class="caixa">                     
-                </div>
-
-                <div class="caixa">                     
-                </div>
-
-                <div class="caixa">                     
-                </div>
-    
             </section>
-        </div>
-
+        
         <section id="noticias">
             <div class="noticia">
                 <div>1</div>
@@ -236,17 +255,22 @@
             </div>
         </section>
 
+        <section id="depoimentos">
+            <div class="depoimento">
+                <div class="foto"></div>
+                    <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et</p>                
+            </div>
 
-        <div id="grupo2">
-            <section id="depoimentos">
-                <h2>O que nossos clientes dizem</h2>
-                <p>"Mudou completamente minha vida!"</p>
-                <p> "Excelente atendimento e resultados incríveis" </p>
-            </section>
-            <footer>
-                &copy; 2025 D'Aiyra - Todos os direitos reservados
-            </footer>
-        </div>
+            <div class="depoimento">
+                <div class="foto"></div>
+                    <p>Lorem ipsum dolor sit amet. Ea velit illo aut dolorem quia a quae nisi quo voluptatem quasi et</p>              
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2025 D'Aiyra - Todos os direitos reservados
+        </footer>
+
     </div>
 </body>
 
