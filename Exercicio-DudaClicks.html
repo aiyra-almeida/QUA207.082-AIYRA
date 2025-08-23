@@ -26,6 +26,11 @@
             padding: 10px 20px;
         }
 
+        header h1 {
+            text-shadow: #D97E42 2px 3px 2px;
+        }
+
+
         nav {
             display: flex;
             justify-content: flex-end;
@@ -146,6 +151,10 @@
         #depoimentos {
             display: flex;
             align-items: center;
+            background-color: #8B2D2D;
+            color: #F1E3D3;
+            padding: 10px;
+            
         }
 
         #depoimentos .depoimento {
@@ -162,17 +171,6 @@
             border: 1px solid gray;
             border-radius: 3px;
         }
-
-
-        /* #depoimentos{
-            text-align: center;
-            background-color: #D97E42;
-            padding: 10px;
-        }
-
-        #depoimentos *{
-            padding: 10px;
-        } */
 
         footer {
             background-color: black;
@@ -205,7 +203,9 @@
                 <h1>Duda Clicks</h1>
                 <nav>
                     <a href="https://www.instagram.com/dudaclicks/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5561993446328&text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20ensaio%20fotogr%C3%A1fico%20com%20voc%C3%AA.%20"><i
+                            class="fa-brands fa-whatsapp"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                 </nav>
             </header>
@@ -217,7 +217,7 @@
                 <button> Agende sua sessão <br>
                     AGORA </button>
             </section>
-            </section>
+        
             <hr>
             <section id="carrossel">
                 <div id="bt-left" onclick="carrossel(-1)">
@@ -237,8 +237,7 @@
                         <div class="img"><img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDH44FnCEKcdR1lYK0_uAr2v8Oypp2urTayXRL_qnOIXXPvvIWk-aS4Euyincgx17AUaI&usqp=CAU"
                                 alt=""></div>
-                        <div class="img"></div>
-                        <div class="img"></div>
+                        <div class="img"></div>                    
                     </div>
                 </div>
                 <div id="bt-right" onclick="carrossel(1)">
