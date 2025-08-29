@@ -8,7 +8,7 @@ const resp3 = document.querySelector('#outResp3')
 
 frm.addEventListener("submit", (e)=> {
     const veiculo = frm.inVeiculo.value
-    const preco = frm.inPreco.value
+    const preco = Number(frm.inPreco.value)
 
     const entrada = preco * 0.5
     const parcela = entrada / 12
