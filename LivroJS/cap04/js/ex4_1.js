@@ -15,6 +15,10 @@ frm.addEventListener("submit", (e)=>{
         //mensagem de aprovado e na cor azul
         resp2.innerText = `Parabéns ${nome}! Aprovado(a).`
         resp2.style.color = 'blue'
+    } else if(media >=4){
+        // mensagem de atenção e na cor verde
+        resp2.innerText = `Atenção ${nome}! Em exame.`
+        resp2.style.color = 'green'
     } else {
         //mensagem de reprovado e na cor vermelho
         resp2.innerText = `Ops! ${nome}... Você foi Reprovado(a).`
