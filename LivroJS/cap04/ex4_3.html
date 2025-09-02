@@ -1,0 +1,19 @@
+<script>
+    const bairro = prompt("Bairro de entrega")
+    let taxaEntrega
+
+    switch (bairro) {
+        case "Taguatinga":
+            taxaEntrega = 5.00
+            break;
+        case "Ceilândia":
+            taxaEntrega = 7.00
+            break;
+        case "Guará":
+            taxaEntrega = 10.00
+        default:
+            taxaEntrega = 8.00
+            break;
+    }
+    alert(`Taxa R$ ${taxaEntrega}`)
+</script>
