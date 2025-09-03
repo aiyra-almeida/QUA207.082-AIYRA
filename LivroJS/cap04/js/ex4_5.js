@@ -5,10 +5,10 @@ frm.addEventListener('submit', (e)=>{
     e.preventDefault()
 
     const num = Number(frm.inNum.value)
-    const raiz = Math.sqrt(num)
+    const raiz = Math.sqrt(num) // calcular a raiz do numero
 
     if(Number.isInteger(raiz)){
-        resp.innerText = `Raíz ${raiz}` // calcular a raiz do numero
+        resp.innerText = `Raíz ${raiz}` // determinar se é inteiro ou não
     } else {
         resp.innerText = `Não há raíz exata para ${num}.` // mostrar mensagem
     }
