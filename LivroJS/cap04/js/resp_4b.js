@@ -1,5 +1,5 @@
 const frm = document.querySelector('form')
-const resp = document.querySelector('h3')
+const resp = document.querySelector('outResp1')
 
 frm.addEventListener('submit', (e)=>{
     e.preventDefault()
