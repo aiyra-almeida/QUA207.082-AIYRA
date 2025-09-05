@@ -12,7 +12,7 @@ body{
 }
 
 img { 
-    float: left; 
+    /* float: center;  */
     height: 300px; 
     width: 300px;
     align-items: center;

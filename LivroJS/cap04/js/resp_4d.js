@@ -8,9 +8,20 @@ frm.addEventListener('submit', (e)=>{
     const B = Number(frm.inB.value)
     const C = Number(frm.inC.value)
 
+    let tri
+
     if(A > B+C || B > C+A || C > A+B){
-        h3.innerText = "Não pode ser um Triângulo"
+        resp.innerText = "Não pode ser um Triângulo"
+        return
     }
 
-    if(A==B && B==C){}
+    if(A==B && B==C){
+        tri = "Equilátero"
+    } else if ( A!=B && B!=C && A!=C){
+        tri = "Escaleno"
+    } else {
+        tri = "Isóceles"
+    }
+
+resp.innerText= `${tri}`
 })
