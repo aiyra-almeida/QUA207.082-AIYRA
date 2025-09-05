@@ -1,5 +1,5 @@
 const frm = document.querySelector('form')
-const resp = document.querySelector('outResp1')
+const resp = document.querySelector('h3')
 
 frm.addEventListener('submit', (e)=>{
     e.preventDefault()
@@ -10,7 +10,7 @@ frm.addEventListener('submit', (e)=>{
 
     let status;
 
-    if(velocCond < comp){
+    if(velocCond < velocPerm){
         status = "Sem Multa"
     } else if (velocCond <= comp){
         status = "Multa Leve"
@@ -21,6 +21,7 @@ frm.addEventListener('submit', (e)=>{
 resp.innerText = `Situação: ${status}`
 
 })
-//  frm.addEventListener('reset', (e)=>{
-        // resp.innerText= ""
-    // })
+
+frm.addEventListener('reset', (e)=>{
+        resp.innerText= ""
+})
