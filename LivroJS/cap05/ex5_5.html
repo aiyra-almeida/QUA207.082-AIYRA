@@ -1,21 +1,30 @@
-<script>
-    alert("Digite 0 para sair")
-do {
-        const num = Number(prompt("Número: "))
-    if(num == 0 || isNaN(num)){
-        const sair = confirm("confirma saída?") // solicita confirmaçõo do usuaro
-    
-            if(sair){
-                break // sair da repeticção
-            } else {
-                continue // volta ao início do laço
-            }
-        }           
-    if (num %2 == 0){
-        alert(`O dobro de ${num} é: ${num*2}`)
-    } else {
-        alert(`0 triplo de ${num} é: ${num*3}`)
-    }
-} while (true) // enquanto verdadeiro(so sai do lacço de repetição pelo break)
-    alert("Bye, bye...")
-</script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Contas do Mês</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="/LivroJS/cap05/img/livrojs.png" type="image/png">
+</head>
+<body>
+    <img src="/LivroJS/cap05/img/ex5_5.jpg" alt="tabuada" class="alta">
+    <h1>Programa de Contas do Mês</h1>
+    <form>
+        <p>
+            Descrição da conta:
+            <input type="text" id="inDesc" required>
+        </p>
+        <p>
+            Valor a pagar:
+            <input type="number" min="0" step="0.01" id="inValor" required>
+        </p>
+        <input type="submit" value="Registrar conta">
+        <input type="reset" value = "Limpar">
+    </form>
+    <pre id="outResp1"></pre>
+    <pre id="outResp2"></pre>
+
+    <script src="js/ex5_5.js"></script>
+</body>
+</html>
