@@ -7,14 +7,16 @@ frm.addEventListener('submit', (e)=>{
     e.preventDefault()
 
     const numero = Number(frm.inNum.value)
-    let numDiv = 0 // declara e inicializa o contador (numDiv é ocontador)
-
-    for (let i = 1; i<= numero; i++){ //percorre todos os possiveis divisores de 1 até o numero declarado
-        if(numero % i == 0){ // verifica se i (1,2,3,...) é divisor do numero
-            numDiv++ // se é, incrementa no contador
+    let primo = true // flag
+    
+    // percorre os possíveis divisores impares iniciando do 3 até a metade do número
+    for (let i = 3; i <= numero/2; i = i+2){ 
+        if(numero % i == 0){ // verifica se i (3,5,7,9...) é divisor do número
+            primo = false // muda a flag
+        break
         }
     }
-    if(numDiv == 2){
+    if((numero <=3 || numero %2 != 0) && primo){
         resp.innerText = `${numero} é primo.`
     } else {
         resp.innerText = `${numero} não é primo.`
