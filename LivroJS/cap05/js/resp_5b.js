@@ -6,12 +6,14 @@ frm.addEventListener('submit', (e)=>{
     
     const numero = Number(frm.inNum.value)
     const ano = Number(frm.inAnos.value)
-    let total = ""
+    let total = numero
+    let resultado = ""
 
     for  (let i=1; i <= ano ; i++){
-        let geracao = numero + (geracao*2)
-        total = Number(geracao + (2*total))
-        resp1.innerText += `${i}º Ano: ${total} Chinchilas\n`
+        resultado += `${i}º Ano: ${total} Chinchilas\n`
+        total *= 3
+        
+        resp1.innerText = resultado
     }
     
 })
