@@ -9,6 +9,8 @@ frm.addEventListener('submit', (e)=>{
     let total = numero
     let resultado = ""
 
+    resp1.innerText = ""
+
     for  (let i=1; i <= ano ; i++){
         resultado += `${i}º Ano: ${total} Chinchilas\n`
         total *= 3
