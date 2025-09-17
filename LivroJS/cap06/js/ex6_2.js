@@ -39,3 +39,6 @@ frm.addEventListener("submit", (e)=>{
         frm.inNum.value = ""
         frm.inNum.focus()
     })
+frm.btNovo.addEventListener("click", ()=>{
+    location.reload() // fazer um refresh da pagina e zerar valores
+})
