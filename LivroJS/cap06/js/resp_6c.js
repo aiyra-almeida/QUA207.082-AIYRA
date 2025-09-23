@@ -40,7 +40,7 @@ frm.addEventListener("submit", (e) => {
 frm.btFiltrar.addEventListener("click", () => {
 
     const minimo = Number(prompt("Número de acertos para aprovação"))
-    // se não informou o valor ou valor máximo
+    // se não informou o valor ou valor mínimo
     if (minimo == 0 || isNaN(minimo)) {
         return
     }
@@ -57,6 +57,5 @@ frm.btFiltrar.addEventListener("click", () => {
         lista += `${candidato.nome} - ${candidato.nota} acertos \n`
     }
     resp.innerText = `Candidatos com nota a partir de: ${minimo} acertos\n`
-    resp.innerText += "*".repeat(50) + "\n"
     resp.innerText += lista
 })
