@@ -1,9 +1,9 @@
 const frm = document.querySelector('form')
 const resp = document.querySelector('pre')
-const candidatos = [] // declara candidato vetor global
-// incluir alguns candidatos fixos
+const candidatos = [] // declara candidato
+
 candidatos.push({ nome: "Sandro", nota: 32 })
-candidatos.push({ nome: "Celina", nota: 19 })
+candidatos.push({ nome: "Célia", nota: 19 })
 candidatos.push({ nome: "Paulo", nota: 26 })
 candidatos.push({ nome: "Fiuka", nota: 12 })
 candidatos.push({ nome: "Fieza", nota: 23 })
@@ -16,11 +16,18 @@ frm.btListar.addEventListener("click", () => {
         alert("Não há candidatos na lista")
         return
     }
+    /*resp.innerText = ""
+    for (const canditado of candidatos) {
+        const { nome, nota } = candidato
+        resp.innerText += `${nome} - ${nota} acertos\n`
+    }*/
+   
     // metodo reduce() concatena uma string, obtendo modelo e nota de cada candidato
     const lista = candidatos.reduce((acumulador, candidato) =>
         acumulador + candidato.nome + ` - ${candidato.nota} acertos \n`, "")
     resp.innerText = `Lista de candidatos cadastrados\n${"-".repeat(40)}\n${lista}`
 })
+
 // disparar o evento de click em btListar (equivale ao click no botão)
 frm.btListar.dispatchEvent(new Event("click"))
 
@@ -40,14 +47,14 @@ frm.addEventListener("submit", (e) => {
 frm.btFiltrar.addEventListener("click", () => {
 
     const minimo = Number(prompt("Número de acertos para aprovação"))
-    // se não informou o valor ou valor máximo
+    // se não informou o valor ou valor mínimo
     if (minimo == 0 || isNaN(minimo)) {
         return
     }
     // filter cria um novo vetor que atende a condição de filtro
     const candidatosFiltro = candidatos
-    .filter(candidato => candidato.nota >= minimo)
-    .sort((a,b) => Number(b.nota) - Number(a.nota))
+        .filter(candidato => candidato.nota >= minimo)
+        .sort((a, b) => Number(b.nota) - Number(a.nota))
     if (candidatosFiltro.length == 0) {
         alert("Não há candidatos com nota inferior ou igual ao solicitado")
         return
@@ -57,6 +64,5 @@ frm.btFiltrar.addEventListener("click", () => {
         lista += `${candidato.nome} - ${candidato.nota} acertos \n`
     }
     resp.innerText = `Candidatos com nota a partir de: ${minimo} acertos\n`
-    resp.innerText += "*".repeat(50) + "\n"
     resp.innerText += lista
 })
