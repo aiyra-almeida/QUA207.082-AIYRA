@@ -9,7 +9,7 @@ frm.addEventListener("submit", (e)=> {
     e.preventDefault()
     const frase = frm.inFrase.value.replace(/ /g,"")
     let palindromo = ""
-    for (let i = frase.lenght-1; i >= 0; i--)
+    for (let i = frase.length-1; i >= 0; i--)
         palindromo += frase[i]
     if (frase == palindromo){
     resp.innerText = `É palíndromo`
