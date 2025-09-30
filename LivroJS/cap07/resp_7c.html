@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/LivroJS/cap07/img/livrojs.png" type="image/png">
+    <link rel="stylesheet" href="/LivroJS/cap07/css/estilo.css">
+    <title>Multa de Trânsito</title>  
+</head>
+<body>
+    <img src="/LivroJS/cap07/img/exerc.jpg" alt="caixa de loja">
+    <h1>Multa de Trânsito</h1>
+    <form >
+        <p>
+            Data de Infração:
+            <input type="date" id="inData" required autofocus>            
+        </p>
+        <p>
+            Valor da Multa R$:
+            <input type="number" id="inMulta" min="0" step="0.01" class="alinha-direita" required>
+        </p>
+        <p>
+            <input type="submit" value="Calcular data limite e valor com desconto">
+        </p>
+    </form>    
+    <h3 id="outResp1"></h3>
+    <h3 id=" outResp2"></h3>
+    <script src="js/resp_7c.js"></script>
+</body>
+</html>
