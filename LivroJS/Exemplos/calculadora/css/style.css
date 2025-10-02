@@ -22,4 +22,33 @@ body{
 #nome{
     color: aliceblue;
     display: flex;
+    font-weight: bold;
+}
+#visor{
+    width:100%;
+    height: 40px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 5px;
+    background-color: #eee;
+    border: none;   
+}
+button{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: #6ed772;
+}
+.operador{
+    background-color: rgb(209, 72, 72);
+}
+.operador:hover{
+    background-color: red;
 }
