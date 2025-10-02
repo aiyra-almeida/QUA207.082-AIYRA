@@ -22,6 +22,11 @@ frm.inDetalhes.addEventListener("focus", ()=>{
     const num = (pizza == "media") ? 2 : (pizza == "grande") ? 3 : 4
     // atribuir placeholder e exibir uma dica do preenchimento
     frm.inDetalhes.placeholder = `Até ${num} sabores`
+    }else{
+        const bebida = frm.inBebida.value
+        const sugestao = (bebida == "refri") ? "coca-cola, guaraná" :
+        (bebida == "suco") ? "Limão, Maracujá, Laranja, Tamarindo" : "copo, Jarra"
+        frm.inDetalhes.placeholder = sugestao
     }
 })
 // limpar os detalhes quando o campo perder o foco
