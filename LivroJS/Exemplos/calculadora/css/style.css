@@ -23,6 +23,14 @@ body{
     color: aliceblue;
     display: flex;
     font-weight: bold;
+    width: 60px;
+}
+#modelo{
+    color: #eee;
+    font-weight: italic;
+    display: flex;
+    width: 60px;
+    align-items: end;
 }
 #visor{
     width:100%;
