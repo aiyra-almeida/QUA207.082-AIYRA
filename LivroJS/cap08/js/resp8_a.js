@@ -1,7 +1,5 @@
 const frm = document.querySelector("form")
-const resp1 = document.querySelector("#outResp1")
-const resp2 = document.querySelector("#outResp2")
-const resp3 = document.querySelector("#outResp3")
+const resp = document.querySelector("pre")
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -10,7 +8,6 @@ frm.addEventListener("submit", (e) => {
     function retornarTracos() {
         return nome.replace(/[^ ]/g,"-")
     }
-    
     function categorizarAluno() {
         if (idade <= 12) {
             return "Infantil"
@@ -20,7 +17,5 @@ frm.addEventListener("submit", (e) => {
             return "Adulto"
         }
     }
-    resp1.innerText = `${nome}`
-    resp2.innerText = retornarTracos()
-    resp3.innerText = categorizarAluno()
+    resp.innerText = `${nome}\n${retornarTracos()}\nCategoria: ${categorizarAluno()}`
 })
