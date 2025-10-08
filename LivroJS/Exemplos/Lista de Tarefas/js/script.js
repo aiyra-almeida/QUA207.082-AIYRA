@@ -25,12 +25,16 @@ frm.btApagar.addEventListener("click", ()=>{
 })
 
 function atualizarTabela(){
-    frm.inIndex.value = ""
-    frm.btNovo.dispatchEvent(new Event("click"))    
+    limpar()
     tbody.innerHTML = ""
     let cont = 0
     for (i of lsItem) {
         tbody.innerHTML += `<tr onclick='prepararEdicao(${cont})'><td>${i.item}</td><td>${i.status}</td></tr>`
         cont++
     }
+}
+function limpar(){
+    frm.inItem.value = ""
+    frm.inStatus.value = ""
+    frm.inIndex.value = ""
 }
