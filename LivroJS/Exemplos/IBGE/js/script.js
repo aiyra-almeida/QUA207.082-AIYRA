@@ -27,8 +27,13 @@ frm.inEstado.addEventListener("change", () => {
     carregarSeletc(frm.inMunicipio, `estados/${uf}/municipios`)
 })
 
-frm.inEstado.addEventListener("change", () => {
-    const uf = frm.inRegiao.value
-    frm.inEstado.innerHTML = ""
-    carregarSeletc(frm.inRegiao, `regioes/${uf}/estados`)
+frm.inRegiao.addEventListener("change", () => {
+    const reg = frm.inRegiao.value
+    frm.inEstado.innerHTML = `<option value="">Selecione</option>`
+    if (reg != "") {
+        carregarSeletc(frm.inEstado, `regioes/${reg}/estados`)
+    } else {
+        carregarSeletc(frm.inEstado, `estados`)
+
+    }
 })
