@@ -1,0 +1,5 @@
+.custom-navbar {
+  background-image: url(); /* Caminho da imagem */
+  background-repeat: repeat; /* Repete a textura */
+  background-size: auto; /* Ajusta o tamanho da imagem (pode ser cover, contain, etc) */
+}
