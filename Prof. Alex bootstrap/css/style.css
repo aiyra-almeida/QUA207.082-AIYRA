@@ -1,5 +1,8 @@
-.custom-navbar {
-  background-image: url(); /* Caminho da imagem */
-  background-repeat: repeat; /* Repete a textura */
-  background-size: auto; /* Ajusta o tamanho da imagem (pode ser cover, contain, etc) */
-}
+body {
+  background-image: url('../img/nb\ bg.jpg'); /* ajuste o caminho da imagem */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* opcional, faz o fundo ficar fixo ao rolar */
+  margin: 0; /* garante que não tenha margem que atrapalhe o background */
+  height: 100vh; /* para ocupar toda altura da tela */}
