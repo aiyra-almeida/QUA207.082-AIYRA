@@ -1,8 +1,9 @@
-body {
+.conteiner-fluid{
   background-image: url('../img/nb\ bg.jpg'); /* ajuste o caminho da imagem */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* opcional, faz o fundo ficar fixo ao rolar */
   margin: 0; /* garante que não tenha margem que atrapalhe o background */
-  height: 100vh; /* para ocupar toda altura da tela */}
+  height: 100vh; /* para ocupar toda altura da tela */
+opacity: 0.5;}
