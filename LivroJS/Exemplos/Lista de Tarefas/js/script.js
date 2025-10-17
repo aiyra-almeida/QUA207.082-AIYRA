@@ -1,7 +1,8 @@
 const frm = document.querySelector("form")
 const tbody = document.querySelector("tbody")
 let lsItem = []
-let filtro = localStorage.getItem('filtro') == null ? "" : localStorage.getItem('filtro')
+let filtro = localStorage.getItem("filtro") 
+filtro = filtro == null ? "" : filtro
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -9,11 +10,11 @@ frm.addEventListener("submit", (e) => {
     const status = frm.inStatus.value
     const index = frm.inIndex.value
     // incluir ou atualizar
-    index == "" ? lsItem.push({ item, status }) : lsItem[index] = { item, status }
+    index == "" ? lsItem.push({ item, status }) : lsItem[index] = {item, status}
     atualizarTabela()
 })
 
-function prepararEdicao(index) {
+function prepararEdicao(index){
     frm.inItem.value = lsItem[index].item
     frm.inStatus.value = lsItem[index].status
     frm.inIndex.value = index
@@ -22,7 +23,7 @@ function prepararEdicao(index) {
 
 frm.btApagar.addEventListener("click", () => {
     const index = frm.inIndex.value
-    if (window.confirm("Deseja excluir essa tarefa?") == false) {
+    if (window.confirm("Deseja excluir essa tarefa?") == false){
         return
     }
     lsItem.splice(index, 1)
@@ -35,44 +36,58 @@ const cores = {
     "Concluído": "bg-danger-subtle"
 }
 
-function atualizarTabela() {
+// function atualizarTabela() {
+//     limpar()
+//     localStorage.setItem("lsItem", JSON.stringify(lsItem))
+//     tbody.innerHTML = ""
+//     for (let i = 0; i < lsItem.length; i++) {  // Loop com índice real
+//         if (filtro == "" || filtro.includes(lsItem[i].status)) {
+//             tbody.innerHTML += `<tr onclick='prepararEdicao(${i})'>  // Passa o índice real (i)
+//                 <td>${lsItem[i].item}</td>
+//                 <td class="${cores[lsItem[i].status]}">${lsItem[i].status}</td>
+//                 </tr>`
+//         }
+//     }
+// }
+
+function atualizarTabela(){
     limpar()
-    localStorage.setItem("lsItem", JSON.stringify(lsItem))
+    localStorage.setItem("lsItem",JSON.stringify(lsItem))
     tbody.innerHTML = ""
     let cont = 0
     for (i of lsItem) {
-        if (filtro == "" || filtro.includes(i.status)) {
+        if (filtro == "" || filtro.includes(i.status)){
             tbody.innerHTML += `<tr onclick='prepararEdicao(${cont})'>
                 <td>${i.item}</td>
                 <td class="${cores[i.status]}">${i.status}</td>
                 </tr>`
-            cont++
         }
+        cont++
     }
 }
-function limpar() {
+function limpar(){
     frm.inItem.value = ""
     frm.inStatus.value = ""
     frm.inIndex.value = ""
     frm.btApagar.disabled = true
 }
 
-if (localStorage.getItem("lsItem") != null) {
+if (localStorage.getItem("lsItem") != null){
     lsItem = JSON.parse(localStorage.getItem("lsItem"))
     atualizarTabela()
 }
 
 const lsFiltro = frm.querySelectorAll('input[type="checkbox"]')
-for (const bt of lsFiltro) {
+for (const bt of lsFiltro){
     bt.addEventListener("click", filtrar)
-    if (filtro.includes(bt.value)) {
+    if (filtro.includes(bt.value)){
         bt.checked = true
     }
 
-    function filtrar() {
+    function filtrar(){
         filtro = ""
-        for (const bt of lsFiltro) {
-            filtro += bt.checked ? bt.value + ",  " : ''
+        for (const bt of lsFiltro){
+            filtro += bt.checked ? bt.value + ",":""
         }
         atualizarTabela()
         localStorage.setItem("filtro", filtro)
