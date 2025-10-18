@@ -19,12 +19,12 @@
             <div class="row">
                 <!-- nome -->
                 <div class="col-6">
-                    <label for="formGroupExampleInput" class="form-label">Nome do Paciente:</label>
+                    <label for="inNome" class="form-label">Nome do Paciente:</label>
                     <input type="text" class="form-control" id="inNome" placeholder="Nome do Paciente">
                 </div>
                 <!-- status -->
                 <div class="col-3">
-                    <label for="inputState" class="form-label">Status:</label>
+                    <label for="inStatus" class="form-label">Status:</label>
                     <select id="inStatus" class="form-select">
                         <option selected>Pré-Operatório</option>
                         <option value="1">Internação</option>
@@ -35,7 +35,7 @@
                 </div>
                 <!-- local -->
                 <div class="col-3">
-                    <label for="formGroupExampleInput" class="form-label">Local:</label>
+                    <label for="inLocal" class="form-label">Local:</label>
                     <input type="text" class="form-control" id="inLocal" placeholder="Sala/Quarto">
                 </div>
             </div>
@@ -43,22 +43,22 @@
             <div class="row">
                 <!-- Início Previsto -->
                 <div class="col-lg-3">
-                    <label for="formGroupExampleInput" class="form-label">Início Previsto:</label>
+                    <label for="inPrevisao" class="form-label">Início Previsto:</label>
                     <input type="time" class="form-control" id="inPrevisao">
                 </div>
                 <!-- Início da Cirurgia -->
                 <div class="col-lg-3">
-                    <label for="formGroupExampleInput" class="form-label">Início da Cirurgia:</label>
+                    <label for="inInicio" class="form-label">Início da Cirurgia:</label>
                     <input type="time" class="form-control" id="inInicio">
                 </div>
                 <!-- Fim da Cirurgia -->
                 <div class="col-lg-3">
-                    <label for="formGroupExampleInput" class="form-label">Fim da Cirurgia:</label>
+                    <label for="inFim" class="form-label">Fim da Cirurgia:</label>
                     <input type="time" class="form-control" id="inFim">
                 </div>
                 <!-- Saída Prevista -->
                 <div class="col-lg-3">
-                    <label for="formGroupExampleInput" class="form-label">Saída Prevista:</label>
+                    <label for="inSaida" class="form-label">Saída Prevista:</label>
                     <input type="time" class="form-control" id="inSaida">
                 </div>
             </div>
@@ -105,5 +105,5 @@
         crossorigin="anonymous"></script> -->
 
 </body>
-
+<input type="hidden" id="inIndex">
 </html>
