@@ -25,12 +25,11 @@
                 <!-- status -->
                 <div class="col-3">
                     <label for="inStatus" class="form-label">Status:</label>
-                    <select id="inStatus" class="form-select">
-                        <option selected>Pré-Operatório</option>
-                        <option value="1">Internação</option>
-                        <option value="2">Sala de Cirurgia</option>
-                        <option value="3">Operando</option>
-                        <option value="4">No quarto</option>
+                    <select id="inStatus" class="form-select">                        
+                        <option selected disabled>Defina um status</option>
+                        <option value="Pré-Operatório">Pré-Operatório</option>
+                        <option value="Em recuperação">Em recuperação</option>
+                        <option value="Transferido">Transferido</option>                                                
                     </select>
                 </div>
                 <!-- local -->
@@ -77,7 +76,7 @@
                     <thead>
                         <tr>
                             <th class="col-lg-4">Nome do Paciente</th>
-                            <th class="col-lg-4">Status</th>
+                            <th class="col-lg-4">Status</th>                            
                             <th class="col-lg-1">Início Previsto</th>
                             <th class="col-lg-1">Início da Cirurgia</th>
                             <th class="col-lg-1">Fim da Cirurgia</th>
@@ -87,11 +86,7 @@
                     <tbody>
                         <tr>
                             <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
+                            
                         </tr>
                     </tbody>
                 </table>

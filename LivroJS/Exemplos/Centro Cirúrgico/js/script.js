@@ -55,11 +55,11 @@ frm.btApagar.addEventListener("click", () => {
     }
 })
 
-// const coresStatus = {
-//   "Pré-Operatório": "#fbd972",
-//   "Em recuperação": "#89e89f",
-//   "Transferido": "#b8daff"
-// }
+const coresStatus = {
+  "Pré-Operatório": "#fcfc2eff",
+  "Em recuperação": "#71ea0fff",
+  "Transferido": "#27ccf1ff"
+}
 
 function atualizarTabela() {
     limpar()
@@ -67,10 +67,10 @@ function atualizarTabela() {
     tbody.innerHTML = ""
    let cont = 0
     for (i of lsItem) {
+          const cor = coresStatus[i.status];
             tbody.innerHTML += `<tr onclick='prepararEdicao(${cont})'>
             <td>${i.item}</td>
-            <td>${i.status}</td>
-            <td>${i.local}</td>
+            <td style="background-color:${cor}">${i.status} (${i.local})</td>            
             <td>${i.Eprevisao}</td>
             <td>${i.inicio}</td>
             <td>${i.fim}</td>
