@@ -80,6 +80,18 @@ function atualizarTabela() {
     }
     
 }
+frm.btApagar.addEventListener("click", () =>{
+    const index = frm.inIndex.value
+    if(index == ""){
+        alert("Necessário selecionar 1 item.")
+        return
+    }
+    if(confirm("Deseja realmente apagar esse item?") == false){
+        return
+    }
+    lsItem.splice(index,1)
+    atualizarTabela()        
+})
 
 function limpar() {
     frm.inNome.value = ""  
