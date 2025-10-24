@@ -13,6 +13,30 @@ produtos.appendChild(clone)
 
 document.querySelectorAll(".produto").forEach((p,i) =>{
     p.addEventListener("click", ()=>{
-        alert(i)
+        p.classList.toggle("marcado")
+        if (lsProdutos[i].marcado == undefined){
+            lsProdutos[i].marcado = 1
+        } else {
+            delete lsProdutos[i].marcado
+        }
+        atualizarQt()
     })
 })
+function atualizarQt(){
+    const qt = lsProdutos.filter(p => p.marcado == 1)
+    document.querySelector("#qt").innerText = qt.length > 0 ? qt.length : ""
+    // if (p.length == 0){
+    //     document.querySelector("#qt").innerText = ""
+    // }
+}
+
+document.querySelector('btVela').addEventListener("click", carrinho)
+
+
+function carrinho(){
+    const qt = document.querySelector("#qt").innerText
+    if(qt == 1){
+        alert("Necessário selecionar um item")
+        return
+    }
+}
