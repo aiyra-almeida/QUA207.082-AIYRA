@@ -30,7 +30,7 @@ function atualizarQt(){
     // }
 }
 
-document.querySelector('btVela').addEventListener("click", carrinho)
+document.querySelector('#btVela').addEventListener("click", carrinho)
 
 
 function carrinho(){
