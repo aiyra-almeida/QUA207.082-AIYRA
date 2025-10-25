@@ -63,7 +63,7 @@ h1, p {
     font-weight: bold;
 }
 
-#produtos {
+.produtos {
     margin-top: 80px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -131,4 +131,51 @@ font-family: "Trocchi", serif;
 .valor{
     margin-top: 20px;
     font-weight: bold;
+}
+
+.ocultar {
+    display: none
+}
+
+.carrinho{
+    margin-top: 80px;
+    font-family: "Quattrocento", serif;
+    color:#3b0a0a;
+}
+td{
+    background-color: #3b0a0a;
+    color: #efedec;
+    padding: 5px;
+    text-align: center;
+}
+
+td[onclick]:hover{
+    cursor: pointer;
+    background-color:rgb(176, 36, 36);
+}
+
+form{
+    margin-top:20px ;
+}
+
+form label{
+    color: #3b0a0a;
+    font-family: "Trocchi", serif;
+}
+
+form input{
+    border: none;
+}
+
+form #inNome{
+    padding: 5px;
+    width: 300px;
+    border-radius: 3px;
+    border: #3b0a0a solid 1px;
+}
+form input[value]{
+    background-color: #3b0a0a;
+    padding: 5px 10px;
+    color: white;
+    font-size: large;
 }
