@@ -178,4 +178,12 @@ form input[value]{
     padding: 5px 10px;
     color: white;
     font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form input[value]:hover{
+    background-color: white;
+    color: #3b0a0a;
+    border: #3b0a0a solid 1px;
 }

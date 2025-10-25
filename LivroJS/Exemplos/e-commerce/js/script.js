@@ -40,8 +40,9 @@ function carrinho(){
     divCarrinho.classList.toggle("ocultar")
     atualizarTb()
 }
-
+let pedido
 function atualizarTb(){
+    pedido = ""
     let total = 0
     const tbody = document.querySelector("tbody")
     tbody.innerHTML = ""
@@ -57,6 +58,7 @@ function atualizarTb(){
             <td onclick ="add(${i},-1)">-</td>
             </tr>`
             total+= p.qt*p.valor
+            pedido+= `${p.nome} ${p.qt}x${p.valor} = ${(p.valor*p.qt)}\n`
         }
     }
     tbody.innerHTML+=`
@@ -64,6 +66,8 @@ function atualizarTb(){
         <td colspan ="3" color: white> Valor Total</td>
         <td colspan ="3">${total.toFixed(2)}</td>
     </tr>`
+
+    pedido+=`Total = ${total.toFixed(2)}\n`
 }
 
 function add(i, valor){
@@ -79,3 +83,12 @@ function add(i, valor){
         atualizarTb()
     }
 }
+const frm = document.querySelector("form")
+frm.addEventListener("submit", (e)=>{
+    e.preventDefault()
+    const nome = frm.inNome.value
+    let msg = "Deseja fazer o seguinte pedido\n"
+    msg+=pedido
+    msg+=`Att: ${nome}`
+    alert(msg)
+})
