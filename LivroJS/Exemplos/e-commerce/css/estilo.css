@@ -187,3 +187,30 @@ form input[value]:hover{
     color: #3b0a0a;
     border: #3b0a0a solid 1px;
 }
+
+@media only screen and (max-width:600px){
+    .container{
+        padding:10px;
+        width: 390px;
+    }
+    .produtos{
+        grid-template-columns: auto auto;
+    }
+    .produto{
+        width: 150px;
+    }
+    .produto img, .produto div img{
+        width: 150px;
+        height: 150px;
+    }
+    .produto > div > img{
+        top: 30px;
+        left: 20px;
+    }
+    .esquerdo{
+        font-size: smaller;
+    }
+    form #inNome{
+       width: 250px;
+    }
+}
