@@ -87,8 +87,12 @@ const frm = document.querySelector("form")
 frm.addEventListener("submit", (e)=>{
     e.preventDefault()
     const nome = frm.inNome.value
-    let msg = "Deseja fazer o seguinte pedido\n"
+    let msg = "Deseja fazer o seguinte pedido!\n"
     msg+=pedido
     msg+=`Att: ${nome}`
-    alert(msg)
+    if (confirm("Deseja enviar essa mensagem?\n"+msg)){
+        msg = encodeURI(msg)
+        const link = `https://wa.me/559198995584?text=${msg}`
+        window.open(link,'_blank')
+    }
 })
