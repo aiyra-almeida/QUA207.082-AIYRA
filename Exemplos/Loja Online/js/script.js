@@ -28,7 +28,7 @@ function atualizarQt(){
     document.querySelector("#qt").innerText = qt.length > 0 ? qt.length : ""
 }
 
-document.querySelector('#btVela').addEventListener("click", carrinho)
+document.querySelector('#btLogo').addEventListener("click", carrinho)
 
 function carrinho(){
     const qt = document.querySelector("#qt").innerText
