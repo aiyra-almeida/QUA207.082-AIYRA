@@ -10,11 +10,11 @@ frm.addEventListener("submit", (e) => {
         }
     }
     function obterSobrenome() {
-        const sobrenome = nome.trim().split(" ");
+        const sobrenome = nome.split(" ");
         return sobrenome[sobrenome.length - 1].toLowerCase();
     }
     function vogais(){
-        let letras = nome.includes(/[aeiou]/g)
+        let letras = nome.match(/[aeiou]/g)
         let total = letras ? letras.length : 0 
         return total.toString().padStart(2,"0")
     }
@@ -24,5 +24,8 @@ frm.addEventListener("submit", (e) => {
         return
     } else {
         resp.innerText = `Senha Inicial: ${obterSobrenome()}`+`${vogais(nome)}`
+    }
+    function validarNome(nome) {
+    return nome.match(/ /g) != null
     }
 })
