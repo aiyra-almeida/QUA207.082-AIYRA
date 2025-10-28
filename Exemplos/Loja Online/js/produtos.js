@@ -2,37 +2,37 @@ const lsProdutos = [
     {
         nome: "Bolsa Lateral",
         descricao: "bolsa lateral com porta isqueiro, em couro",
-        img: "img/bolsa01.jpg",
+        img: "img/bolsa01.png",
         valor: 99
     },
     {
         nome: "Bolsa Circular",
         descricao: "bolsa lateral circular",
-        img: "img/bolsa02.jpg",
-        valor: 44
+        img: "img/bolsa02.png",
+        valor: 89
     },
     {
-        nome: "Trio Bom dia",
-        descricao: "vela aromática - 300g",
-        img: "img/bolsa03.jpg",
-        valor: 35
+        nome: "Bolsa bike transpotadora",
+        descricao: "Bolsa circular para bicicleta",
+        img: "img/bolsa03.png",
+        valor: 89
     },
     {
-        nome: "Meus Cristais",
-        descricao: "vela aromática - 300g",
-        img: "img/bolsa04.jpg",
-        valor: 39
+        nome: "Pochete Stilus",
+        descricao: "bolsa lateral estilo pochete",
+        img: "img/bolsa04.png",
+        valor: 69
     },
     {
-        nome: "Campo de Lavanda",
-        descricao: "vela aromática - 300g",
-        img: "img/bolsa05.jpg",
-        valor: 44
+        nome: "Bolsa hiponga",
+        descricao: "bolsa feminina lateral com franja",
+        img: "img/bolsa05.png",
+        valor: 59
     },
     {
-        nome: "Minha Rotina",
-        descricao: "vela aromática - 300g",
-        img: "img/bolsa06.jpg",
-        valor: 39
+        nome: "Carteirola",
+        descricao: "bolsa lateral masculina",
+        img: "img/bolsa06.png",
+        valor: 49
     }
 ]

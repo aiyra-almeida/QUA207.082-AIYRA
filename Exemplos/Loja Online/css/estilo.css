@@ -24,11 +24,11 @@ h1 {
 }
 
 h1, p {
-    color: #3b0a0a;
+    color: #574444;
 }
 
-#btVela {
-    background-color: #3b0a0a;
+#btLogo {
+    background-color: #649673;
     border-radius: 100%;
     width: 50px;
     height: 50px;
@@ -47,13 +47,13 @@ h1, p {
     float: right;
 }
 
-#btVela img {
+#btLogo img {
     height: 80%;
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
-#btVela #qt {
-    background-color: #aca2a2;
+#btLogo #qt {
+    background-color: #574444;
     position: absolute;
     top: -3px;
     right: -5px;
@@ -91,16 +91,16 @@ h1, p {
     left: 60px;
     width: 128px;
     height: 128px;
-    filter: invert(1);
+    filter: invert(0.7);
     display: block;
 }
 
 .produto:hover{
-    box-shadow: 0px 0px 7px 0px #3b0a0a;
+    box-shadow: 0px 0px 7px 0px #574444;
 }
 
 .marcado{
-    background-color: #3b0a0a;
+    background-color: #574444;
 }
 
 .marcado p{
@@ -140,13 +140,14 @@ font-family: "Trocchi", serif;
 .carrinho{
     margin-top: 80px;
     font-family: "Quattrocento", serif;
-    color:#3b0a0a;
+    color:#574444;
 }
 td{
-    background-color: #3b0a0a;
-    color: #efedec;
+    background-color: #649673;
+    color: #523f3f;
     padding: 5px;
     text-align: center;
+    font-weight: bolder;
 }
 
 td[onclick]:hover{
@@ -159,7 +160,7 @@ form{
 }
 
 form label{
-    color: #3b0a0a;
+    color: #574444;
     font-family: "Trocchi", serif;
 }
 
@@ -171,10 +172,10 @@ form #inNome{
     padding: 5px;
     width: 300px;
     border-radius: 3px;
-    border: #3b0a0a solid 1px;
+    border: #574444 solid 1px;
 }
 form input[value]{
-    background-color: #3b0a0a;
+    background-color: #574444;
     padding: 5px 10px;
     color: white;
     font-size: large;
@@ -184,8 +185,8 @@ form input[value]{
 
 form input[value]:hover{
     background-color: white;
-    color: #3b0a0a;
-    border: #3b0a0a solid 1px;
+    color: #649673;
+    border: #574444 solid 1px;
 }
 
 @media only screen and (max-width:600px){
