@@ -197,10 +197,10 @@ form input[value]:hover{
         grid-template-columns: auto auto;
     }
     .produto{
-        width: 150px;
+        width: 120px;
     }
     .produto img, .produto div img{
-        width: 150px;
+        width: 120px;
         height: 150px;
     }
     .produto > div > img{
