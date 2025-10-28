@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Trocchi&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 780px;
+    /* height: 100vh; */
+    background-color: #efedec;
+    margin: auto;
+    padding: 50px;
+}
+
+h1 {
+    font-family: "Trocchi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.esquerdo p {
+    font-family: "Quattrocento", serif;
+}
+
+h1, p {
+    color: #3b0a0a;
+}
+
+#btVela {
+    background-color: #3b0a0a;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.esquerdo {
+    float: left;
+}
+
+.direito {
+    float: right;
+}
+
+#btVela img {
+    height: 80%;
+    filter: invert(1);
+}
+
+#btVela #qt {
+    background-color: #aca2a2;
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    border-radius: 100%;
+    color: #fff;
+    padding: 0px 5px;
+    font-weight: bold;
+}
+
+.produtos {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.produto{
+    background-color: white;
+    text-align: center;
+    width: 210px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    position: relative;
+}
+
+.produto > div > img{
+    display: none;
+}
+
+.marcado > div > img {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 128px;
+    height: 128px;
+    filter: invert(1);
+    display: block;
+}
+
+.produto:hover{
+    box-shadow: 0px 0px 7px 0px #3b0a0a;
+}
+
+.marcado{
+    background-color: #3b0a0a;
+}
+
+.marcado p{
+    color: white;
+}
+
+.marcado > img {
+    opacity: 0.7;
+}
+.produto > img{
+    width: 210px;
+    height: 210px;
+    margin-bottom: 10px;
+}
+
+.nome{
+font-family: "Trocchi", serif;
+}
+
+.descricao, .valor{
+    font-family: "Quattrocento", serif;
+}
+
+.descricao{
+    font-size: small;
+}
+
+.valor{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.ocultar {
+    display: none
+}
+
+.carrinho{
+    margin-top: 80px;
+    font-family: "Quattrocento", serif;
+    color:#3b0a0a;
+}
+td{
+    background-color: #3b0a0a;
+    color: #efedec;
+    padding: 5px;
+    text-align: center;
+}
+
+td[onclick]:hover{
+    cursor: pointer;
+    background-color:rgb(176, 36, 36);
+}
+
+form{
+    margin-top:20px ;
+}
+
+form label{
+    color: #3b0a0a;
+    font-family: "Trocchi", serif;
+}
+
+form input{
+    border: none;
+}
+
+form #inNome{
+    padding: 5px;
+    width: 300px;
+    border-radius: 3px;
+    border: #3b0a0a solid 1px;
+}
+form input[value]{
+    background-color: #3b0a0a;
+    padding: 5px 10px;
+    color: white;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form input[value]:hover{
+    background-color: white;
+    color: #3b0a0a;
+    border: #3b0a0a solid 1px;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        padding:10px;
+        width: 390px;
+    }
+    .produtos{
+        grid-template-columns: auto auto;
+    }
+    .produto{
+        width: 150px;
+    }
+    .produto img, .produto div img{
+        width: 150px;
+        height: 150px;
+    }
+    .produto > div > img{
+        top: 30px;
+        left: 20px;
+    }
+    .esquerdo{
+        font-size: smaller;
+    }
+    form #inNome{
+       width: 250px;
+    }
+}
