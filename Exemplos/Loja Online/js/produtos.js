@@ -34,5 +34,23 @@ const lsProdutos = [
         descricao: "bolsa lateral masculina",
         img: "img/bolsa06.png",
         valor: 49
+    },
+    {
+        nome: "Sandália Alpargata",
+        descricao: "sandália unisex em couro",
+        img: "img/bolsa07.png",
+        valor: 39
+    },
+    {
+        nome: "Case - porta facas",
+        descricao: "case para kit de facas",
+        img: "img/bolsa08.png",
+        valor: 59
+    },
+    {
+        nome: "Cartucheira",
+        descricao: "cartucheira femural feminina",
+        img: "img/bolsa09.png",
+        valor: 79
     }
 ]
