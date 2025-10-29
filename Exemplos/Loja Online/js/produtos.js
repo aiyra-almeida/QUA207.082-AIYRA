@@ -6,7 +6,7 @@ const lsProdutos = [
         valor: 99
     },
     {
-        nome: "Bolsa Circular",
+        nome: "Bolsa Lateral Circular",
         descricao: "bolsa lateral circular",
         img: "img/bolsa02.png",
         valor: 89
